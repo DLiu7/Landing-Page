@@ -3907,3 +3907,37 @@ input, select, textarea {
 			}
 
 		}
+
+		.modal__languages {
+			margin-top: 20px;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		
+		.modal__language {
+			width: 20%;
+			padding: 10px;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			transition: all 250ms ease;
+		}
+		
+		.modal__language--img {
+			width: 60%;
+		}
+		
+		.modal__language:hover .language__name {
+			transform: scale(1);
+		}
+		
+		.modal__language:hover {
+			transform: scale(0.9);
+			filter: brightness(80%);
+		}
+
+		.language__name {
+			margin-top: 8px; /* Add some space between the image and the name */
+			font-size: 14px; /* Adjust the font size if needed */
+		}
