@@ -35,14 +35,19 @@
 
         <!-- Intro -->
         <header id="intro" class="wrapper style1 fullscreen fade-up">
-            <div class="inner">
-                <h1>Hello there, I'm Daniel.</h1>
-                <p>I'm an aspiring <strong>Software Engineer</strong> with a passion for <strong>coding</strong> and <strong>web design</strong>.</p>
-                <ul class="actions">
-                    <li><a href="#about" class="button primary">Learn more</a></li>
-                </ul>
-            </div>
-        </header>
+			<div class="content-container">
+				<div class="inner">
+					<h1>Hello there, I'm Daniel.</h1>
+					<p>I'm an aspiring <strong>Software Engineer</strong> with a passion for <strong>coding</strong> and <strong>web design</strong>.</p>
+					<ul class="actions">
+						<li><a href="#about" class="button primary">Learn more</a></li>
+					</ul>
+				</div>
+				<div class="headerImage">
+					<img src="./assets/me.png" class="header" alt="Selfie" />
+				</div>
+			</div>
+		</header>		
 
         <!-- About -->
         <section id="about" class="wrapper style2 spotlights">
@@ -57,31 +62,31 @@
             </section>
             <section>
                 <a href="#" class="image"><img src="images/pic01.jpg" alt="Technical Skills Image" data-position="center center" /></a>
-                <div class="content">
-                    <div class="inner">
-                        <h2>Technical Skills</h2>
-                        <p>Skilled in Java and C++, with recent experience in learning frontend development including HTML, CSS, JavaScript, and React.</p>
-                    </div>
-                </div>
-				<div class="modal__languages">
-					<figure class="modal__language">
-						<img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="HTML" />
+                <div class="content expanded">
+					<div class="inner">
+						<h2>Technical Skills</h2>
+						<p>Skilled in Java and C++, with recent experience in learning frontend development including HTML, CSS, JavaScript, and React.</p>
+					</div>
+				</div>
+				<div class="languages">
+					<figure class="language">
+						<img class="language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="HTML" />
 						<span class="language__name">HTML</span>
 					</figure>
-					<figure class="modal__language">
-						<img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png" alt="CSS" />
+					<figure class="language">
+						<img class="language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png" alt="CSS" />
 						<span class="language__name">CSS</span>
 					</figure>
-					<figure class="modal__language">
-						<img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" />
+					<figure class="language">
+						<img class="language--img" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" />
 						<span class="language__name">JavaScript</span>
 					</figure>
-					<figure class="modal__language">
-						<img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="React" />
+					<figure class="language">
+						<img class="language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="React" />
 						<span class="language__name">React</span>
 					</figure>
-					<figure class="modal__language">
-						<img class="modal__language--img" src="https://classes.engineering.wustl.edu/cse425s/images/2/26/Java.png" alt="Java" />
+					<figure class="language">
+						<img class="language--img" src="https://classes.engineering.wustl.edu/cse425s/images/2/26/Java.png" alt="Java" />
 						<span class="language__name">Java</span>
 					</figure>
 				</div>
@@ -154,14 +159,29 @@
     </div>
 
     <!-- Footer -->
-    <footer id="footer" class="wrapper style1-alt">
-        <div class="inner">
-            <ul class="menu">
-                <li>&copy; Daniel Liu. All rights reserved.</li>
-                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-            </ul>
+<footer id="footer" class="wrapper style1-alt">
+    <div class="inner footer__row">
+        <figure>
+            <img src="./assets/logo.png" class="footer__logo" alt="Logo" />
+        </figure>
+        <div class="footer__social--list">
+            <a href="https://github.com/DauntlessZX" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white">
+                <b>GitHub</b>
+            </a>
+            <a href="https://www.linkedin.com/in/daniel-liu-73ab20242/" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white">
+                <b>LinkedIn</b>
+            </a>
+            <a href="./assets/Daniel_Resume.pdf" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white">
+                <b>Resume</b>
+            </a>
         </div>
-    </footer>
+        <ul class="menu">
+            <li>&copy; Daniel Liu. All rights reserved.</li>
+            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+    </div>
+</footer>
+
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>

@@ -3908,13 +3908,47 @@ input, select, textarea {
 
 		}
 
-		.modal__languages {
-			margin-top: 20px;
+		/* Ensure the header takes up the full screen */
+		.wrapper.style1.fullscreen {
+    		display: flex;
+    		align-items: center;
+    		justify-content: center;
+    		height: 100vh;
+    		padding: 0 2em; /* Add padding to prevent content from touching the edges */
+		}
+
+		.content-container {
+    		display: flex;
+    		align-items: center;
+    		justify-content: space-between;
+    		width: 100%;
+    		max-width: 1000px; /* Adjust as needed */
+		}
+
+		.inner {
+    		flex: 1;
+    		margin-right: 2em; /* Space between text and image */
+		}
+
+		.headerImage {
+    		flex: 1;
+    		display: flex;
+    		justify-content: center;
+		}
+
+		.headerImage img {
+    		max-width: 100%;
+    		height: auto;
+    		border-radius: 10px; /* Optional: add some styling to the image */
+		}
+
+		.languages {
+			margin-top: 30px;
 			display: flex;
 			flex-wrap: wrap;
 		}
 		
-		.modal__language {
+		.language {
 			width: 20%;
 			padding: 10px;
 			position: relative;
@@ -3924,15 +3958,15 @@ input, select, textarea {
 			transition: all 250ms ease;
 		}
 		
-		.modal__language--img {
+		.language--img {
 			width: 60%;
 		}
 		
-		.modal__language:hover .language__name {
+		.language:hover .language__name {
 			transform: scale(1);
 		}
 		
-		.modal__language:hover {
+		.language:hover {
 			transform: scale(0.9);
 			filter: brightness(80%);
 		}
@@ -3940,4 +3974,82 @@ input, select, textarea {
 		.language__name {
 			margin-top: 8px; /* Add some space between the image and the name */
 			font-size: 14px; /* Adjust the font size if needed */
+		}
+		
+		.footer__row {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			padding: 20px;
+		}
+		
+		.footer__logo {
+			max-width: 100px;
+			margin-bottom: 20px;
+		}
+		
+		.footer__social--list {
+			width: 100%;
+			max-width: 500px;
+			display: flex;
+			justify-content: center;
+			gap: 20px; /* Space between social links */
+			margin: 28px 0;
+			flex-wrap: wrap;
+		}
+		
+		.footer__social--link {
+			color: white;
+			text-decoration: none;
+		}
+		
+		.footer__social--link:hover {
+			text-decoration: underline;
+		}
+		
+		.menu {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			justify-content: center;
+			gap: 10px; /* Space between menu items */
+		}
+		
+		.menu li {
+			margin: 0 10px;
+			color: white;
+		}
+		
+		.menu li a {
+			color: white;
+			text-decoration: none;
+		}
+		
+		.menu li a:hover {
+			text-decoration: underline;
+		}
+
+		.content {
+			width: 100%; /* Make the content take up the full width */
+			max-width: 1200px; /* Adjust the maximum width as needed */
+			margin: 0 auto; /* Center the content */
+			padding: 2em; /* Add padding for spacing */
+		}
+
+		.content h2 {
+			font-size: 2em; /* Adjust font size if needed */
+			margin-bottom: 0.5em; /* Space below the heading */
+		}
+
+		.content p {
+			font-size: 1.25em; /* Adjust font size if needed */
+			line-height: 1.5; /* Adjust line height for readability */
+		}
+
+		.content {
+			max-width: none; /* Remove inner max-width */
+			text-align: left; /* Adjust text alignment if needed */
 		}
