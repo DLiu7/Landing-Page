@@ -12,10 +12,10 @@
 	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script type="text/javascript">
         (function(){
-            emailjs.init("y_w4bjCkrbJKkldDg");
+            emailjs.init("3ItHVY98cYYlvic1t");
         })();
     </script>
-	
+
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-RPV67JP6CW"></script>
 	<script>
@@ -144,7 +144,7 @@
                                 </div>
                             </div>
                             <ul class="actions">
-                                <li><button type="submit" class="button submit">Send Message</button></li>
+                                <li><button type="submit" class="button primary submit">Send Message</button></li>
                             </ul>
                         </form>
                     </section>
@@ -209,20 +209,25 @@
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
 
-                const serviceID = 'service_jok19p7';
-                const templateID = 'template_tgarrgl';
+                const serviceID = 'service_v3bb9ze';
+                const templateID = 'template_t2taq8x';
 
                 emailjs.sendForm(serviceID, templateID, this)
-                    .then((response) => {
-                        console.log('SUCCESS!', response.status, response.text);
-                        alert('Message sent successfully!');
-                        document.getElementById('contact-form').reset();
-                    }, (error) => {
-                        console.error('FAILED...', error);
-                        alert('Message sending failed.');
-                    });
+    			.then(
+        			(response) => {
+            		// Success callback
+            		console.log('SUCCESS!', response.status, response.text);
+            		alert('Message sent successfully!');
+            		document.getElementById('contact-form').reset();
+        		})
+    			.catch((error) => {
+        			// Error callback
+        			console.error('FAILED...', error);
+        			alert("The email service is temporarily unavailable. Please contact me directly at dliu9763504@gmail.com.");
+    			});
             });
         });
+
     </script>
 
 </body>
