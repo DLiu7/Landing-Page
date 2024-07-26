@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <script src="https://kit.fontawesome.com/a3ae5aba6e.js" crossorigin="anonymous"></script>
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+	<!-- Mail.js Initialization -->
 	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-	<script type="text/javascript">
-		(function(){
-			emailjs.init("y_w4bjCkrbJKkldDg");
-		})();
-	</script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            emailjs.init("y_w4bjCkrbJKkldDg");
+        });
+    </script>
 </head>
 
 <!-- Google tag (gtag.js) -->
@@ -21,7 +23,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-RPV67JP6CW');
 </script>
 
@@ -46,19 +47,19 @@
 
         <!-- Intro -->
         <header id="intro" class="wrapper style1 fullscreen fade-up">
-			<div class="content-container">
-				<div class="inner">
-					<h1>Hello there, I'm Daniel.</h1>
-					<p>I'm an aspiring <strong>Software Engineer</strong> with a passion for <strong>coding</strong> and <strong>web design</strong>.</p>
-					<ul class="actions">
-						<li><a href="#about" class="button primary">Learn more</a></li>
-					</ul>
-				</div>
-				<div class="headerImage">
-					<img src="./assets/me.png" class="header" alt="Selfie" />
-				</div>
-			</div>
-		</header>		
+            <div class="content-container">
+                <div class="inner">
+                    <h1>Hello there, I'm Daniel.</h1>
+                    <p>I'm an aspiring <strong>Software Engineer</strong> with a passion for <strong>coding</strong> and <strong>web design</strong>.</p>
+                    <ul class="actions">
+                        <li><a href="#about" class="button primary">Learn more</a></li>
+                    </ul>
+                </div>
+                <div class="headerImage">
+                    <img src="./assets/me.png" class="header" alt="Selfie" />
+                </div>
+            </div>
+        </header>
 
         <!-- About -->
         <section id="about" class="wrapper style2 spotlights">
@@ -74,33 +75,33 @@
             <section>
                 <a href="#" class="image"><img src="images/pic01.jpg" alt="Technical Skills Image" data-position="center center" /></a>
                 <div class="content expanded">
-					<div class="inner">
-						<h2>Technical Skills</h2>
-						<p>Skilled in Java and C++, with recent experience in learning frontend development including HTML, CSS, JavaScript, and React.</p>
-					</div>
-				</div>
-				<div class="languages">
-					<figure class="language">
-						<img class="language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="HTML" />
-						<span class="language__name">HTML</span>
-					</figure>
-					<figure class="language">
-						<img class="language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png" alt="CSS" />
-						<span class="language__name">CSS</span>
-					</figure>
-					<figure class="language">
-						<img class="language--img" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" />
-						<span class="language__name">JavaScript</span>
-					</figure>
-					<figure class="language">
-						<img class="language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="React" />
-						<span class="language__name">React</span>
-					</figure>
-					<figure class="language">
-						<img class="language--img" src="https://classes.engineering.wustl.edu/cse425s/images/2/26/Java.png" alt="Java" />
-						<span class="language__name">Java</span>
-					</figure>
-				</div>
+                    <div class="inner">
+                        <h2>Technical Skills</h2>
+                        <p>Skilled in Java and C++, with recent experience in learning frontend development including HTML, CSS, JavaScript, and React.</p>
+                    </div>
+                </div>
+                <div class="languages">
+                    <figure class="language">
+                        <img class="language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="HTML" />
+                        <span class="language__name">HTML</span>
+                    </figure>
+                    <figure class="language">
+                        <img class="language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png" alt="CSS" />
+                        <span class="language__name">CSS</span>
+                    </figure>
+                    <figure class="language">
+                        <img class="language--img" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" />
+                        <span class="language__name">JavaScript</span>
+                    </figure>
+                    <figure class="language">
+                        <img class="language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="React" />
+                        <span class="language__name">React</span>
+                    </figure>
+                    <figure class="language">
+                        <img class="language--img" src="https://classes.engineering.wustl.edu/cse425s/images/2/26/Java.png" alt="Java" />
+                        <span class="language__name">Java</span>
+                    </figure>
+                </div>
             </section>
         </section>
 
@@ -121,78 +122,77 @@
         </section>
 
         <!-- Contact -->
-<section id="contact" class="wrapper style1 fade-up">
-    <div class="inner">
-        <h2>Contact Me</h2>
-        <p>You can reach me through the form below or via any of my social media links!</p>
-        <div class="split style1">
-            <section>
-                <form id="contact-form">
-                    <div class="fields">
-                        <div class="field half">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name" required />
-                        </div>
-                        <div class="field half">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" required />
-                        </div>
-                        <div class="field">
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message" rows="5" required></textarea>
-                        </div>
-                    </div>
-                    <ul class="actions">
-                        <li><button type="submit" class="button submit">Send Message</button></li>
-                    </ul>
-                </form>
-            </section>
-            <section>
-                <ul class="contact">
-                    <li>
-                        <h3>Email</h3>
-                        <a href="mailto:dliu9764504@gmail.com">dliu9764504@gmail.com</a>
-                    </li>
-                    <li>
-                        <h3>Social</h3>
-                        <ul class="icons">
-                            <li><a href="https://github.com/DauntlessZX" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                            <li><a href="https://www.linkedin.com/in/daniel-liu-73ab20242/" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-                            <li><a href="./assets/Daniel_Resume.pdf" target="_blank" class="fa-solid fa-file"><span class="label">Resume</span></a></li>
+        <section id="contact" class="wrapper style1 fade-up">
+            <div class="inner">
+                <h2>Contact Me</h2>
+                <p>You can reach me through the form below or via any of my social media links!</p>
+                <div class="split style1">
+                    <section>
+                        <form id="contact-form" method="post">
+                            <div class="fields">
+                                <div class="field half">
+                                    <label for="name">Name</label>
+                                    <input type="text" name="name" id="name" required />
+                                </div>
+                                <div class="field half">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email" required />
+                                </div>
+                                <div class="field">
+                                    <label for="message">Message</label>
+                                    <textarea name="message" id="message" rows="5" required></textarea>
+                                </div>
+                            </div>
+                            <ul class="actions">
+                                <li><button type="submit" class="button submit">Send Message</button></li>
+                            </ul>
+                        </form>
+                    </section>
+                    <section>
+                        <ul class="contact">
+                            <li>
+                                <h3>Email</h3>
+                                <a href="mailto:dliu9764504@gmail.com">dliu9764504@gmail.com</a>
+                            </li>
+                            <li>
+                                <h3>Social</h3>
+                                <ul class="icons">
+                                    <li><a href="https://github.com/DauntlessZX" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                                    <li><a href="https://www.linkedin.com/in/daniel-liu-73ab20242/" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                                    <li><a href="./assets/Daniel_Resume.pdf" target="_blank" class="fa-solid fa-file"><span class="label">Resume</span></a></li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                </ul>
-            </section>
-        </div>
-    </div>
-</section>
+                    </section>
+                </div>
+            </div>
+        </section>
 
     </div>
 
     <!-- Footer -->
-<footer id="footer" class="wrapper style1-alt">
-    <div class="inner footer__row">
-        <figure>
-            <img src="./assets/logo.png" class="footer__logo" alt="Logo" />
-        </figure>
-        <div class="footer__social--list">
-            <a href="https://github.com/DauntlessZX" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white">
-                <b>GitHub</b>
-            </a>
-            <a href="https://www.linkedin.com/in/daniel-liu-73ab20242/" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white">
-                <b>LinkedIn</b>
-            </a>
-            <a href="./assets/Daniel_Resume.pdf" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white">
-                <b>Resume</b>
-            </a>
+    <footer id="footer" class="wrapper style1-alt">
+        <div class="inner footer__row">
+            <figure>
+                <img src="./assets/logo.png" class="footer__logo" alt="Logo" />
+            </figure>
+            <div class="footer__social--list">
+                <a href="https://github.com/DauntlessZX" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white">
+                    <b>GitHub</b>
+                </a>
+                <a href="https://www.linkedin.com/in/daniel-liu-73ab20242/" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white">
+                    <b>LinkedIn</b>
+                </a>
+                <a href="./assets/Daniel_Resume.pdf" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white">
+                    <b>Resume</b>
+                </a>
+            </div>
+            <ul class="menu">
+                <li>&copy; Daniel Liu. All rights reserved.</li>
+                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
         </div>
-        <ul class="menu">
-            <li>&copy; Daniel Liu. All rights reserved.</li>
-            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-        </ul>
-    </div>
-</footer>
-
+    </footer>
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
@@ -203,25 +203,27 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
 
-	<!-- Email.js Script -->
-    <script type="text/javascript">
-		document.getElementById('contact-form').addEventListener('submit', function(event) {
-			event.preventDefault();
-	
-			const serviceID = 'service_a23ycm7';
-			const templateID = 'template_cykl0bp';
-	
-			emailjs.sendForm(serviceID, templateID, this)
-				.then((response) => {
-					console.log('SUCCESS!', response.status, response.text);
-					alert('Message sent successfully!');
-					document.getElementById('contact-form').reset();
-				}, (error) => {
-					console.log('FAILED...', error);
-					alert('Message sending failed.');
-				});
-		});
-		</script>
+    <!-- Email.js Script -->
+	<script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                const serviceID = 'service_jok19p7';
+                const templateID = 'template_tgarrgl';
+
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then((response) => {
+                        console.log('SUCCESS!', response.status, response.text);
+                        alert('Message sent successfully!');
+                        document.getElementById('contact-form').reset();
+                    }, (error) => {
+                        console.error('FAILED...', error);
+                        alert('Message sending failed.');
+                    });
+            });
+        });
+    </script>
 
 </body>
 </html>
